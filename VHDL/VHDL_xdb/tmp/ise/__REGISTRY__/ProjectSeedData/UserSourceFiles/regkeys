@@ -1,6 +1,9 @@
 NUM_USER_FILES
-1
+2
 s
 user_file_1
 VHDL.vhd
+s
+user_file_2
+VHDL.ucf
 s

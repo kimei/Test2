@@ -1,11 +1,11 @@
 PROP_DevDevice
-xc5vlx30
+xc5vlx50t
 s
 PROP_DevFamily
 Virtex5
 s
 PROP_DevPackage
-ff324
+ff1136
 s
 PROP_DevSpeed
 -3
@@ -23,7 +23,7 @@ PROP_PreferredLanguage
 VHDL
 s
 PROP_Simulator
-Modelsim-SE VHDL
+ISE Simulator (VHDL/Verilog)
 s
 PROP_Synthesis_Tool
 XST (VHDL/Verilog)

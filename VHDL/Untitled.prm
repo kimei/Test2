@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator K.39
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o M:\MASTER\Test2\VHDL\//Untitled -u 0 M:/MASTER/Test2/VHDL/vhdl.bit -x xcf32p 
+
+PROM M:\MASTER\Test2\VHDL\//Untitled.prm map: Fri Jan 14 13:26:54 2011
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          4096K
+PROM start    0000:0000
+PROM end      003f:ffff
+PROM checksum 250e46cb
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    001a:cd7f     Jan 14 13:24:41 2011 M:/MASTER/Test2/VHDL/vhdl.bit

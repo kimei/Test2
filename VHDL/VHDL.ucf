@@ -1,0 +1,2 @@
+NET "lys" LOC = AF13;
+NET "knapp" LOC = U8;

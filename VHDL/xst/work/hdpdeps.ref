@@ -1,0 +1,7 @@
+V3 3
+FL //aristoteles/kimei/MASTER/Test2/VHDL/VHDL.vhd 2011/01/14.13:16:31 K.39
+EN work/VHDL 1295007448 FL //aristoteles/kimei/MASTER/Test2/VHDL/VHDL.vhd \
+      PB ieee/std_logic_1164 1217055545 PB ieee/std_logic_arith 1217055546 \
+      PB ieee/STD_LOGIC_UNSIGNED 1217055547
+AR work/VHDL/Behavioral 1295007449 \
+      FL //aristoteles/kimei/MASTER/Test2/VHDL/VHDL.vhd EN work/VHDL 1295007448

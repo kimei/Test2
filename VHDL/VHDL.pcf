@@ -1,0 +1,9 @@
+//! **************************************************************************
+// Written by: Map K.39 on Fri Jan 14 13:19:32 2011
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "lys" LOCATE = SITE "AF13" LEVEL 1;
+COMP "knapp" LOCATE = SITE "U8" LEVEL 1;
+SCHEMATIC END;
+

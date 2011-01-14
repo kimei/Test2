@@ -1,0 +1,1076 @@
+iMPACT Version: 10.1.03
+
+iMPACT log file Started on Fri Jan 14 11:49:43 2011
+
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+ LPT base address = 0378h.
+ ECP base address = 0778h.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Driver file xusb_xlp.sys found.
+ Driver version: src=1029, dest=1029.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+ Cable PID = 0008.
+ Max current requested during enumeration is 74 mA.
+Type = 0x0004.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1303.
+File version of C:/Xilinx/10.1/ISE/data/xusb_xlp.hex = 1303.
+Firmware hex file version = 1303.
+PLD file version = 0012h.
+ PLD version = 0012h.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+Attempting to identify devices in the boundary-scan chain configuration...// *** BATCH CMD : Identify 
+PROGRESS_START - Starting Operation.
+Identifying chain contents ....'1': : Manufacturer's ID =Xilinx xc5vlx50t, Version : 8
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/virtex5/data/xc5vlx50t.bsd...
+INFO:iMPACT:501 - '1': Added Device xc5vlx50t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'2': : Manufacturer's ID =Xilinx xccace, Version : 0
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/acecf/data/xccace.bsd...
+INFO:iMPACT:501 - '1': Added Device xccace successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'3': : Manufacturer's ID =Xilinx xc95144xl, Version : 5
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/xc9500xl/data/xc95144xl.bsd...
+INFO:iMPACT:501 - '1': Added Device xc95144xl successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'4': : Manufacturer's ID =Xilinx xcf32p, Version : 15
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/xcfp/data/xcf32p.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'5': : Manufacturer's ID =Xilinx xcf32p, Version : 15
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 5 -file "M:/MASTER/Test2/VHDL/vhdl.bit"
+'5': Loading file 'M:/MASTER/Test2/VHDL/vhdl.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+----------------------------------------------------------------------
+INFO:iMPACT:501 - '5': Added Device xc5vlx50t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+// *** BATCH CMD : Program -p 5 
+Maximum TCK operating frequency for this device chain: 10000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+5: Device Temperature: Current Reading:   42.01 C, Min. Reading:   41.52 C, Max.Reading:   56.28 C
+5: VCCINT Supply: Current Reading:   1.002 V, Min. Reading:   1.002 V, Max.Reading:   1.002 V
+5: VCCAUX Supply: Current Reading:   2.481 V, Min. Reading:   2.481 V, Max.Reading:   2.484 V
+PROGRESS_START - Starting Operation.
+'5': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+done.
+'5': Reading status register contents...
+CRC error                                         :         0
+Decryptor security set                            :         0
+DCM locked                                        :         1
+DCI matched                                       :         1
+End of startup signal from Startup block          :         1
+status of GTS_CFG_B                               :         1
+status of GWE                                     :         1
+status of GHIGH                                   :         1
+value of MODE pin M0                              :         1
+value of MODE pin M1                              :         0
+Value of MODE pin M2                              :         1
+Internal signal indicates when housecleaning is completed:         1
+Value driver in from INIT pad                     :         1
+Internal signal indicates that chip is configured :         1
+Value of DONE pin                                 :         1
+Indicates when ID value written does not match chip ID:         0
+Decryptor error Signal                            :         0
+System Monitor Over-Temperature Alarm             :         0
+startup_state[18] CFG startup state machine       :         0
+startup_state[19] CFG startup state machine       :         0
+startup_state[20] CFG startup state machine       :         1
+E-fuse program voltage available                  :         0
+SPI Flash Type[22] Select                         :         1
+SPI Flash Type[23] Select                         :         1
+SPI Flash Type[24] Select                         :         1
+CFG bus width auto detection result               :         0
+CFG bus width auto detection result               :         0
+Reserved                                          :         0
+BPI address wrap around error                     :         0
+IPROG pulsed                                      :         0
+read back crc error                               :         0
+Indicates that efuse logic is busy                :         0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 1011 1110 0000 1011 1000 0000 
+INFO:iMPACT:579 - '5': Completed downloading bit file to device.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+INFO:iMPACT - '5': Checking done pin....done.
+'5': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+// *** BATCH CMD : Program -p 5 
+ERROR:iMPACT:2246 - A reference voltage has not been detected on the ribbon   cable
+   	interface to the target system ( pin 2 ).  Check that power is applied
+   	 to the target system and that the ribbon cable is properly seated at
+   	 both ends.  The status LED on Platform Cable USB will be GREEN if target
+   	 voltage is in the proper range and applied to the correct pin.
+// *** BATCH CMD : Program -p 5 
+Maximum TCK operating frequency for this device chain: 10000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_START - Starting Operation.
+5: Device Temperature: Current Reading:   52.84 C, Min. Reading:   42.50 C, Max.Reading:   52.84 C
+5: VCCINT Supply: Current Reading:   0.999 V, Min. Reading:   0.996 V, Max.Reading:   1.002 V
+5: VCCAUX Supply: Current Reading:   2.476 V, Min. Reading:   2.476 V, Max.Reading:   2.484 V
+'5': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+done.
+'5': Reading status register contents...
+CRC error                                         :         0
+Decryptor security set                            :         0
+DCM locked                                        :         1
+DCI matched                                       :         1
+End of startup signal from Startup block          :         1
+status of GTS_CFG_B                               :         1
+status of GWE                                     :         1
+status of GHIGH                                   :         1
+value of MODE pin M0                              :         1
+value of MODE pin M1                              :         0
+Value of MODE pin M2                              :         1
+Internal signal indicates when housecleaning is completed:         1
+Value driver in from INIT pad                     :         1
+Internal signal indicates that chip is configured :         1
+Value of DONE pin                                 :         1
+Indicates when ID value written does not match chip ID:         0
+Decryptor error Signal                            :         0
+System Monitor Over-Temperature Alarm             :         0
+startup_state[18] CFG startup state machine       :         0
+startup_state[19] CFG startup state machine       :         0
+startup_state[20] CFG startup state machine       :         1
+E-fuse program voltage available                  :         0
+SPI Flash Type[22] Select                         :         1
+SPI Flash Type[23] Select                         :         1
+SPI Flash Type[24] Select                         :         1
+CFG bus width auto detection result               :         0
+CFG bus width auto detection result               :         0
+Reserved                                          :         0
+BPI address wrap around error                     :         0
+IPROG pulsed                                      :         0
+read back crc error                               :         0
+Indicates that efuse logic is busy                :         0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 1011 1110 0000 1011 1000 0000 
+INFO:iMPACT:579 - '5': Completed downloading bit file to device.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+INFO:iMPACT - '5': Checking done pin....done.
+'5': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 5
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 4
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 3
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 2
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+ LPT base address = 0378h.
+ ECP base address = 0778h.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Driver file xusb_xlp.sys found.
+ Driver version: src=1029, dest=1029.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+ Cable PID = 0008.
+ Max current requested during enumeration is 74 mA.
+Type = 0x0004.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1303.
+File version of C:/Xilinx/10.1/ISE/data/xusb_xlp.hex = 1303.
+Firmware hex file version = 1303.
+PLD file version = 0012h.
+ PLD version = 0012h.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+Attempting to identify devices in the boundary-scan chain configuration...// *** BATCH CMD : Identify 
+PROGRESS_START - Starting Operation.
+Identifying chain contents ....'1': : Manufacturer's ID =Xilinx xc5vlx50t, Version : 8
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/virtex5/data/xc5vlx50t.bsd...
+INFO:iMPACT:501 - '1': Added Device xc5vlx50t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'2': : Manufacturer's ID =Xilinx xccace, Version : 0
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/acecf/data/xccace.bsd...
+INFO:iMPACT:501 - '1': Added Device xccace successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'3': : Manufacturer's ID =Xilinx xc95144xl, Version : 5
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/xc9500xl/data/xc95144xl.bsd...
+INFO:iMPACT:501 - '1': Added Device xc95144xl successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'4': : Manufacturer's ID =Xilinx xcf32p, Version : 15
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/xcfp/data/xcf32p.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'5': : Manufacturer's ID =Xilinx xcf32p, Version : 15
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 5 -file "M:/MASTER/Test2/VHDL/vhdl.bit"
+'5': Loading file 'M:/MASTER/Test2/VHDL/vhdl.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+----------------------------------------------------------------------
+INFO:iMPACT:501 - '5': Added Device xc5vlx50t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+// *** BATCH CMD : cutDevice -p 5
+----------------------------------------------------------------------
+// *** BATCH CMD : pasteDevice -p 1
+INFO:iMPACT:501 - '1': Added Device XC5VLX50T successfully.
+----------------------------------------------------------------------
+// *** BATCH CMD : cutDevice -p 1
+----------------------------------------------------------------------
+// *** BATCH CMD : pasteDevice -p 1
+INFO:iMPACT:501 - '1': Added Device XC5VLX50T successfully.
+----------------------------------------------------------------------
+// *** BATCH CMD : Program -p 1 
+INFO:iMPACT:583 - '1': The idcode read from the device does not match the idcode   in the bsdl File.
+INFO:iMPACT:1578 - '1':  Device IDCODE :        00000000000000000000000000000000
+INFO:iMPACT:1579 - '1': Expected IDCODE:    00000010101010010110000010010011
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+PROGRESS_START - Starting Operation.
+Attempting to identify devices in the boundary-scan chain configuration...// *** BATCH CMD : Identify 
+PROGRESS_START - Starting Operation.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Identifying chain contents ....'1': : Manufacturer's ID =Xilinx xc5vlx50t, Version : 8
+INFO:iMPACT:501 - '1': Added Device xc5vlx50t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'2': : Manufacturer's ID =Xilinx xccace, Version : 0
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/acecf/data/xccace.bsd...
+INFO:iMPACT:501 - '1': Added Device xccace successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'3': : Manufacturer's ID =Xilinx xc95144xl, Version : 5
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/xc9500xl/data/xc95144xl.bsd...
+INFO:iMPACT:501 - '1': Added Device xc95144xl successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'4': : Manufacturer's ID =Xilinx xcf32p, Version : 15
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/xcfp/data/xcf32p.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'5': : Manufacturer's ID =Xilinx xcf32p, Version : 15
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 5 -file "M:/MASTER/Test2/VHDL/vhdl.bit"
+'5': Loading file 'M:/MASTER/Test2/VHDL/vhdl.bit' ...
+done.
+----------------------------------------------------------------------
+INFO:iMPACT:501 - '5': Added Device xc5vlx50t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+// *** BATCH CMD : Program -p 5 
+Maximum TCK operating frequency for this device chain: 10000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+5: Device Temperature: Current Reading:   37.58 C, Min. Reading:   34.13 C, Max.Reading:   37.58 C
+5: VCCINT Supply: Current Reading:   1.002 V, Min. Reading:   1.002 V, Max.Reading:   1.002 V
+5: VCCAUX Supply: Current Reading:   2.481 V, Min. Reading:   2.481 V, Max.Reading:   2.484 V
+PROGRESS_START - Starting Operation.
+'5': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+done.
+'5': Reading status register contents...
+CRC error                                         :         0
+Decryptor security set                            :         0
+DCM locked                                        :         1
+DCI matched                                       :         1
+End of startup signal from Startup block          :         1
+status of GTS_CFG_B                               :         1
+status of GWE                                     :         1
+status of GHIGH                                   :         1
+value of MODE pin M0                              :         0
+value of MODE pin M1                              :         0
+Value of MODE pin M2                              :         0
+Internal signal indicates when housecleaning is completed:         1
+Value driver in from INIT pad                     :         1
+Internal signal indicates that chip is configured :         1
+Value of DONE pin                                 :         1
+Indicates when ID value written does not match chip ID:         0
+Decryptor error Signal                            :         0
+System Monitor Over-Temperature Alarm             :         0
+startup_state[18] CFG startup state machine       :         0
+startup_state[19] CFG startup state machine       :         0
+startup_state[20] CFG startup state machine       :         1
+E-fuse program voltage available                  :         0
+SPI Flash Type[22] Select                         :         1
+SPI Flash Type[23] Select                         :         1
+SPI Flash Type[24] Select                         :         1
+CFG bus width auto detection result               :         0
+CFG bus width auto detection result               :         0
+Reserved                                          :         0
+BPI address wrap around error                     :         0
+IPROG pulsed                                      :         0
+read back crc error                               :         0
+Indicates that efuse logic is busy                :         0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 0001 1110 0000 1011 1000 0000 
+INFO:iMPACT:579 - '5': Completed downloading bit file to device.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+INFO:iMPACT - '5': Checking done pin....done.
+'5': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+// *** BATCH CMD : Program -p 5 
+Maximum TCK operating frequency for this device chain: 10000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+5: Device Temperature: Current Reading:   52.84 C, Min. Reading:   37.58 C, Max.Reading:   52.84 C
+5: VCCINT Supply: Current Reading:   0.996 V, Min. Reading:   0.996 V, Max.Reading:   1.002 V
+5: VCCAUX Supply: Current Reading:   2.476 V, Min. Reading:   2.476 V, Max.Reading:   2.484 V
+PROGRESS_START - Starting Operation.
+'5': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+done.
+'5': Reading status register contents...
+CRC error                                         :         0
+Decryptor security set                            :         0
+DCM locked                                        :         1
+DCI matched                                       :         1
+End of startup signal from Startup block          :         1
+status of GTS_CFG_B                               :         1
+status of GWE                                     :         1
+status of GHIGH                                   :         1
+value of MODE pin M0                              :         0
+value of MODE pin M1                              :         1
+Value of MODE pin M2                              :         0
+Internal signal indicates when housecleaning is completed:         1
+Value driver in from INIT pad                     :         1
+Internal signal indicates that chip is configured :         1
+Value of DONE pin                                 :         1
+Indicates when ID value written does not match chip ID:         0
+Decryptor error Signal                            :         0
+System Monitor Over-Temperature Alarm             :         0
+startup_state[18] CFG startup state machine       :         0
+startup_state[19] CFG startup state machine       :         0
+startup_state[20] CFG startup state machine       :         1
+E-fuse program voltage available                  :         0
+SPI Flash Type[22] Select                         :         1
+SPI Flash Type[23] Select                         :         1
+SPI Flash Type[24] Select                         :         1
+CFG bus width auto detection result               :         1
+CFG bus width auto detection result               :         0
+Reserved                                          :         0
+BPI address wrap around error                     :         0
+IPROG pulsed                                      :         0
+read back crc error                               :         0
+Indicates that efuse logic is busy                :         0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 0101 1110 0000 1011 1100 0000 
+INFO:iMPACT:579 - '5': Completed downloading bit file to device.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+INFO:iMPACT - '5': Checking done pin....done.
+'5': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 5
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 4
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 3
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 2
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+ LPT base address = 0378h.
+ ECP base address = 0778h.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Driver file xusb_xlp.sys found.
+ Driver version: src=1029, dest=1029.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+ Cable PID = 0008.
+ Max current requested during enumeration is 74 mA.
+Type = 0x0004.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1303.
+File version of C:/Xilinx/10.1/ISE/data/xusb_xlp.hex = 1303.
+Firmware hex file version = 1303.
+PLD file version = 0012h.
+ PLD version = 0012h.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+Attempting to identify devices in the boundary-scan chain configuration...// *** BATCH CMD : Identify 
+ERROR:iMPACT:2246 - A reference voltage has not been detected on the ribbon   cable
+   	interface to the target system ( pin 2 ).  Check that power is applied
+   	 to the target system and that the ribbon cable is properly seated at
+   	 both ends.  The status LED on Platform Cable USB will be GREEN if target
+   	 voltage is in the proper range and applied to the correct pin.
+Attempting to identify devices in the boundary-scan chain configuration...// *** BATCH CMD : Identify 
+PROGRESS_START - Starting Operation.
+Identifying chain contents ....'1': : Manufacturer's ID =Xilinx xc5vlx50t, Version : 8
+INFO:iMPACT:501 - '1': Added Device xc5vlx50t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'2': : Manufacturer's ID =Xilinx xccace, Version : 0
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/acecf/data/xccace.bsd...
+INFO:iMPACT:501 - '1': Added Device xccace successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'3': : Manufacturer's ID =Xilinx xc95144xl, Version : 5
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/xc9500xl/data/xc95144xl.bsd...
+INFO:iMPACT:501 - '1': Added Device xc95144xl successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'4': : Manufacturer's ID =Xilinx xcf32p, Version : 15
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/xcfp/data/xcf32p.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'5': : Manufacturer's ID =Xilinx xcf32p, Version : 15
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 5 -file "M:/MASTER/Test2/VHDL/vhdl.bit"
+'5': Loading file 'M:/MASTER/Test2/VHDL/vhdl.bit' ...
+done.
+----------------------------------------------------------------------
+INFO:iMPACT:501 - '5': Added Device xc5vlx50t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Updating config file M:/MASTER/Test2/VHDL/vhdl.bit...
+// *** BATCH CMD : Program -p 5 
+Maximum TCK operating frequency for this device chain: 10000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+5: Device Temperature: Current Reading:   41.02 C, Min. Reading:   31.67 C, Max.Reading:   41.52 C
+5: VCCINT Supply: Current Reading:   0.996 V, Min. Reading:   0.996 V, Max.Reading:   1.002 V
+5: VCCAUX Supply: Current Reading:   2.476 V, Min. Reading:   2.476 V, Max.Reading:   2.484 V
+PROGRESS_START - Starting Operation.
+'5': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+done.
+'5': Reading status register contents...
+CRC error                                         :         0
+Decryptor security set                            :         0
+DCM locked                                        :         1
+DCI matched                                       :         1
+End of startup signal from Startup block          :         1
+status of GTS_CFG_B                               :         1
+status of GWE                                     :         1
+status of GHIGH                                   :         1
+value of MODE pin M0                              :         1
+value of MODE pin M1                              :         0
+Value of MODE pin M2                              :         0
+Internal signal indicates when housecleaning is completed:         1
+Value driver in from INIT pad                     :         1
+Internal signal indicates that chip is configured :         1
+Value of DONE pin                                 :         1
+Indicates when ID value written does not match chip ID:         0
+Decryptor error Signal                            :         0
+System Monitor Over-Temperature Alarm             :         0
+startup_state[18] CFG startup state machine       :         0
+startup_state[19] CFG startup state machine       :         0
+startup_state[20] CFG startup state machine       :         1
+E-fuse program voltage available                  :         0
+SPI Flash Type[22] Select                         :         1
+SPI Flash Type[23] Select                         :         1
+SPI Flash Type[24] Select                         :         1
+CFG bus width auto detection result               :         0
+CFG bus width auto detection result               :         0
+Reserved                                          :         0
+BPI address wrap around error                     :         0
+IPROG pulsed                                      :         0
+read back crc error                               :         0
+Indicates that efuse logic is busy                :         0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 1001 1110 0000 1011 1000 0000 
+INFO:iMPACT:579 - '5': Completed downloading bit file to device.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+INFO:iMPACT - '5': Checking done pin....done.
+'5': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+// *** BATCH CMD : assignFile -p 1 -file "M:/MASTER/Test2/VHDL/Untitled.mcs"
+'1': Loading file 'M:/MASTER/Test2/VHDL/Untitled.mcs' ...
+done.
+INFO:iMPACT:1835 - Loading CFI file M:/MASTER/Test2/VHDL/Untitled.cfi
+CFI file not found, proceed with device default setting.
+// *** BATCH CMD : setAttribute -position 1 -attr readnextdevice -value "(null)"
+// *** BATCH CMD : assignFile -p 2 -file "M:/MASTER/Test2/VHDL/Untitled.mcs"
+'2': Loading file 'M:/MASTER/Test2/VHDL/Untitled.mcs' ...
+done.
+INFO:iMPACT:1835 - Loading CFI file M:/MASTER/Test2/VHDL/Untitled.cfi
+CFI file not found, proceed with device default setting.
+// *** BATCH CMD : setAttribute -position 2 -attr readnextdevice -value "(null)"
+// *** BATCH CMD : Program -p 2 -e -loadfpga -defaultVersion 0 
+ERROR:iMPACT:2246 - A reference voltage has not been detected on the ribbon   cable
+   	interface to the target system ( pin 2 ).  Check that power is applied
+   	 to the target system and that the ribbon cable is properly seated at
+   	 both ends.  The status LED on Platform Cable USB will be GREEN if target
+   	 voltage is in the proper range and applied to the correct pin.
+// *** BATCH CMD : Program -p 2 -e -loadfpga -defaultVersion 0 
+'2': Putting device in ISP mode...done.
+Maximum TCK operating frequency for this device chain: 10000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+5: Device Temperature: Current Reading:   40.04 C, Min. Reading:   37.58 C, Max.Reading:   40.04 C
+5: VCCINT Supply: Current Reading:   1.002 V, Min. Reading:   1.002 V, Max.Reading:   1.002 V
+5: VCCAUX Supply: Current Reading:   2.481 V, Min. Reading:   2.481 V, Max.Reading:   2.484 V
+'2': Erasing device...
+PROGRESS_START - Starting Operation.
+Erasure completed successfully.
+'2': Putting device in ISP mode...done.
+done.
+'2': Putting device in ISP mode...done.
+'2': Putting device in ISP mode...done.
+'2': Putting device in ISP mode...done.
+'2': Putting device in ISP mode...done.
+'2': Programming revision selection to 0.
+done.
+done.
+'2': Putting device in ISP mode...done.
+done.
+done.
+'2': Putting device in ISP mode...done.
+done.
+'2': Starting FPGA Load with Prom Data...INFO:iMPACT:563 - '2':Please ensure proper connections as specified by the data   book ...
+'2': Programming completed successfully.
+'2': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     76 sec.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 5
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 4
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 3
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 2
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 1
+No DRC error found.
+No DRC error found.
+The following values are set for this run of the wizard
+SUBMODE_TYPE is SUBMODE_PFFSERIAL
+MULTIBOOT_DEVICE is DEVICE_NONE
+MULTIBOOT_TYPE is TYPE_NONE
+Downstream Daisy-Chain type is CHAINTYPE_NONE
+setMultiBootSelect is FALSE
+setSPISelect is FALSE
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addConfigDevice  -name "Untitled" -path"M:\MASTER\Test2\VHDL\"
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : addDesign -version 0 -name "00"
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addDeviceChain -index 0
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addDeviceChain -index 0
+Override chain at index 0.
+Overriding chain at index 0.
+// *** BATCH CMD : setAttribute -configdevice -attr compressed -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr compressed -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr autoSize -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr fileFormat -value "mcs"
+// *** BATCH CMD : setAttribute -configdevice -attr fillValue -value "FF"
+// *** BATCH CMD : setAttribute -configdevice -attr swapBit -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr dir -value "UP"
+// *** BATCH CMD : setAttribute -configdevice -attr multiboot -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr multiboot -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr spiSelected -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr spiSelected -value "FALSE"
+// *** BATCH CMD : addPromDevice -p 1 -size 0 -name xcf32p
+'1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+// *** BATCH CMD : setMode -pff
+------------------------  GUI: PFFView Wizard Data Report ------------------------
+SubMode: PFF_SERIAL
+MB Master Device: 
+MB Mode: 
+MB Chain: 
+getMultiBootSelected(): FALSE
+getSPISelected(): FALSE
+------------------------  GUI: End PFFView Report  ------------------------
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : deletePromDevice -position 1
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : deleteDesign -version 0
+// *** BATCH CMD : setCurrentDesign -version -1
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addConfigDevice -size 512 -name "Untitled" -path"M:\MASTER\Test2\VHDL\/"
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setAttribute -configdevice -attr dir -value "UP"
+// *** BATCH CMD : setAttribute -configdevice -attr flashDataWidth -value "8"
+// *** BATCH CMD : addPromDevice -p 1 -size 0 -name xcf32p
+'1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setSubmode -pffserial
+// *** BATCH CMD : setAttribute -configdevice -attr dir -value "UP"
+// *** BATCH CMD : addDesign -version 0 -name "0000"
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : addDeviceChain -index 0
+------------------------  GUI: Wizard Data Report  ---------------------------
+      PROM Mode : Serial
+      Compression : false
+      Fill Value : FF
+      Output Format : mcs
+      Swap Bits : true
+      LoadDirection : UP
+      PROM Basename : Untitled
+      File Location : M:\MASTER\Test2\VHDL\/
+      Auto Selcet : false
+      Number of Data Stream : 1
+      Number of PROMs : 1
+      PROM Name : xcf32p		PROM Size : 4194304 Bytes
+-------------------------- END of Report ----------------------------
+// *** BATCH CMD : setAttribute -design -attr name -value "0"
+// *** BATCH CMD : addDevice -p 1 -file "M:/MASTER/Test2/VHDL/vhdl.bit"
+'1': Loading file 'M:/MASTER/Test2/VHDL/vhdl.bit' ...
+INFO:iMPACT - Elapsed time =      1 sec.
+done.
+INFO:iMPACT:501 - '1': Added Device xc5vlx50t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Add one device.// *** BATCH CMD : addDevice -p 2 -file "M:/MASTER/Test2/VHDL/vhdl.bit"
+'2': Loading file 'M:/MASTER/Test2/VHDL/vhdl.bit' ...
+INFO:iMPACT - Elapsed time =      0 sec.
+done.
+INFO:iMPACT:501 - '2': Added Device xc5vlx50t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Add one device.Revision 0, Design 0 Device #1 is Selected.
+Revision 0, Design 0 Device #1 is Selected.
+// *** BATCH CMD : cutDevice -p 2
+----------------------------------------------------------------------
+---------------- Rev 0, DesignName 0 : -------------------
+dev#0 size:14052352 pn:xc5vlx50t  fn:M:/MASTER/Test2/VHDL/vhdl.bit
+// *** BATCH CMD : saveProjectFile -file "M:\MASTER\Test2\VHDL/VHDL.ipf"
+// *** BATCH CMD : saveProjectFile -file "M:/MASTER/Test2/VHDL/VHDL.ipf"
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : deletePromDevice -position 1
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : deleteDesign -version 0
+// *** BATCH CMD : setCurrentDesign -version -1
+// *** BATCH CMD : setMode -pff
+Preference Table
+Name                 Setting             
+StartupClock         AUTO_CORRECTION     
+AutoSignature        FALSE               
+KeepSVF              FALSE               
+ConcurrentMode       FALSE               
+UseHighz             FALSE               
+ConfigOnFailure      Stop                
+UserLevel            Novice              
+MessageLevel         Detailed            
+svfUseTime           FALSE               
+SpiByteSwap          AUTO_CORRECTION     
+'1': Loading file 'M:/MASTER/Test2/VHDL/vhdl.bit' ...
+INFO:iMPACT - Elapsed time =      0 sec.
+done.
+INFO:iMPACT:501 - '1': Added Device xc5vlx50t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+Active mode is PFF
+Swap bit can only be disabled in Hex file format only.
+0x1acd80 (1756544) bytes loaded up from 0x0
+Using user-specified prom size of 4096K
+Writing file "M:\MASTER\Test2\VHDL\//Untitled.mcs".
+Writing file "M:\MASTER\Test2\VHDL\//Untitled.prm".
+Writing file "M:\MASTER\Test2\VHDL\//Untitled.sig".
+// *** BATCH CMD : loadProjectFile -file "M:\MASTER\Test2\VHDL/VHDL.ipf"
+'1': Loading file 'M:/MASTER/Test2/VHDL/vhdl.bit' ...
+INFO:iMPACT - Elapsed time =      0 sec.
+done.
+INFO:iMPACT:501 - '1': Added Device xc5vlx50t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+Active mode is PFF
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -pff
+------------------------  GUI: PFFView Wizard Data Report ------------------------
+SubMode: PFF_SERIAL
+MB Master Device: 
+MB Mode: 
+MB Chain: 
+getMultiBootSelected(): FALSE
+getSPISelected(): FALSE
+------------------------  GUI: End PFFView Report  ------------------------
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setCurrentDeviceChain -index 0
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+ LPT base address = 0378h.
+ ECP base address = 0778h.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+Cable connection failed.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Driver file xusb_xlp.sys found.
+ Driver version: src=1029, dest=1029.
+ Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
+ Cable PID = 0008.
+ Max current requested during enumeration is 74 mA.
+Type = 0x0004.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1303.
+File version of C:/Xilinx/10.1/ISE/data/xusb_xlp.hex = 1303.
+Firmware hex file version = 1303.
+PLD file version = 0012h.
+ PLD version = 0012h.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+Attempting to identify devices in the boundary-scan chain configuration...// *** BATCH CMD : Identify 
+ERROR:iMPACT:2246 - A reference voltage has not been detected on the ribbon   cable
+   	interface to the target system ( pin 2 ).  Check that power is applied
+   	 to the target system and that the ribbon cable is properly seated at
+   	 both ends.  The status LED on Platform Cable USB will be GREEN if target
+   	 voltage is in the proper range and applied to the correct pin.
+Attempting to identify devices in the boundary-scan chain configuration...// *** BATCH CMD : Identify 
+PROGRESS_START - Starting Operation.
+Identifying chain contents ....'1': : Manufacturer's ID =Xilinx xc5vlx50t, Version : 8
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/virtex5/data/xc5vlx50t.bsd...
+INFO:iMPACT:501 - '1': Added Device xc5vlx50t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'2': : Manufacturer's ID =Xilinx xccace, Version : 0
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/acecf/data/xccace.bsd...
+INFO:iMPACT:501 - '1': Added Device xccace successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'3': : Manufacturer's ID =Xilinx xc95144xl, Version : 5
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/xc9500xl/data/xc95144xl.bsd...
+INFO:iMPACT:501 - '1': Added Device xc95144xl successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'4': : Manufacturer's ID =Xilinx xcf32p, Version : 15
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/xcfp/data/xcf32p.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'5': : Manufacturer's ID =Xilinx xcf32p, Version : 15
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 1 -file "M:/MASTER/Test2/VHDL/Untitled.mcs"
+'1': Loading file 'M:/MASTER/Test2/VHDL/Untitled.mcs' ...
+done.
+INFO:iMPACT:1835 - Loading CFI file M:/MASTER/Test2/VHDL/Untitled.cfi
+CFI file not found, proceed with device default setting.
+// *** BATCH CMD : setAttribute -position 1 -attr readnextdevice -value "(null)"
+// *** BATCH CMD : assignFile -p 2 -file "M:/MASTER/Test2/VHDL/Untitled.mcs"
+'2': Loading file 'M:/MASTER/Test2/VHDL/Untitled.mcs' ...
+done.
+INFO:iMPACT:1835 - Loading CFI file M:/MASTER/Test2/VHDL/Untitled.cfi
+CFI file not found, proceed with device default setting.
+// *** BATCH CMD : setAttribute -position 2 -attr readnextdevice -value "(null)"
+// *** BATCH CMD : assignFile -p 5 -file "M:/MASTER/Test2/VHDL/vhdl.bit"
+'5': Loading file 'M:/MASTER/Test2/VHDL/vhdl.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+----------------------------------------------------------------------
+INFO:iMPACT:501 - '5': Added Device xc5vlx50t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+// *** BATCH CMD : Program -p 1 -e -defaultVersion 0 
+'1': Putting device in ISP mode...done.
+Maximum TCK operating frequency for this device chain: 10000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_START - Starting Operation.
+5: Device Temperature: Current Reading:   29.21 C, Min. Reading:   26.75 C, Max.Reading:   29.21 C
+5: VCCINT Supply: Current Reading:   1.002 V, Min. Reading:   1.002 V, Max.Reading:   1.002 V
+5: VCCAUX Supply: Current Reading:   2.481 V, Min. Reading:   2.481 V, Max.Reading:   2.484 V
+'1': Erasing device...
+Erasure completed successfully.
+'1': Putting device in ISP mode...done.
+done.
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+'1': Programming revision selection to 0.
+done.
+done.
+'1': Putting device in ISP mode...done.
+done.
+done.
+'1': Putting device in ISP mode...done.
+done.
+'1': Programming completed successfully.
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     73 sec.
+// *** BATCH CMD : pasteDevice -p 5
+INFO:iMPACT:501 - '5': Added Device xc5vlx50t successfully.
+----------------------------------------------------------------------
+Attempting to identify devices in the boundary-scan chain configuration...// *** BATCH CMD : Identify 
+PROGRESS_START - Starting Operation.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Identifying chain contents ....'1': : Manufacturer's ID =Xilinx xc5vlx50t, Version : 8
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/virtex5/data/xc5vlx50t.bsd...
+INFO:iMPACT:501 - '1': Added Device xc5vlx50t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'2': : Manufacturer's ID =Xilinx xccace, Version : 0
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/acecf/data/xccace.bsd...
+INFO:iMPACT:501 - '1': Added Device xccace successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'3': : Manufacturer's ID =Xilinx xc95144xl, Version : 5
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/xc9500xl/data/xc95144xl.bsd...
+INFO:iMPACT:501 - '1': Added Device xc95144xl successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'4': : Manufacturer's ID =Xilinx xcf32p, Version : 15
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/10.1/ISE/xcfp/data/xcf32p.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'5': : Manufacturer's ID =Xilinx xcf32p, Version : 15
+INFO:iMPACT:501 - '1': Added Device xcf32p successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 1 -file "M:/MASTER/Test2/VHDL/Untitled.mcs"
+'1': Loading file 'M:/MASTER/Test2/VHDL/Untitled.mcs' ...
+done.
+INFO:iMPACT:1835 - Loading CFI file M:/MASTER/Test2/VHDL/Untitled.cfi
+CFI file not found, proceed with device default setting.
+// *** BATCH CMD : setAttribute -position 1 -attr readnextdevice -value "(null)"
+// *** BATCH CMD : assignFile -p 2 -file "M:/MASTER/Test2/VHDL/Untitled.mcs"
+'2': Loading file 'M:/MASTER/Test2/VHDL/Untitled.mcs' ...
+done.
+INFO:iMPACT:1835 - Loading CFI file M:/MASTER/Test2/VHDL/Untitled.cfi
+CFI file not found, proceed with device default setting.
+// *** BATCH CMD : setAttribute -position 2 -attr readnextdevice -value "(null)"
+// *** BATCH CMD : assignFile -p 5 -file "M:/MASTER/Test2/VHDL/vhdl.bit"
+'5': Loading file 'M:/MASTER/Test2/VHDL/vhdl.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+----------------------------------------------------------------------
+INFO:iMPACT:501 - '5': Added Device xc5vlx50t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+// *** BATCH CMD : Program -p 1 -e -defaultVersion 0 
+'1': Putting device in ISP mode...done.
+Maximum TCK operating frequency for this device chain: 10000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+5: Device Temperature: Current Reading:   33.64 C, Min. Reading:   26.75 C, Max.Reading:   34.13 C
+5: VCCINT Supply: Current Reading:   1.002 V, Min. Reading:   1.002 V, Max.Reading:   1.002 V
+5: VCCAUX Supply: Current Reading:   2.481 V, Min. Reading:   2.481 V, Max.Reading:   2.484 V
+'1': Erasing device...
+PROGRESS_START - Starting Operation.
+Erasure completed successfully.
+'1': Putting device in ISP mode...done.
+done.
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+'1': Programming revision selection to 0.
+done.
+done.
+'1': Putting device in ISP mode...done.
+done.
+done.
+'1': Putting device in ISP mode...done.
+done.
+'1': Programming completed successfully.
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     75 sec.

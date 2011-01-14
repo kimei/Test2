@@ -28,13 +28,14 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity VHDL is
-    Port ( Jada : in  STD_LOGIC);
+    Port ( lys : out  STD_LOGIC;
+				knapp : in std_logic);
 end VHDL;
 
 architecture Behavioral of VHDL is
 
 begin
-
+lys <= '1' when (knapp = '0') else '0';
 
 end Behavioral;
 
