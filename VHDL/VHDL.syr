@@ -3,14 +3,14 @@ Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to M:/MASTER/Test2/VHDL/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.58 secs
  
 --> Parameter xsthdpdir set to M:/MASTER/Test2/VHDL/xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.58 secs
  
 --> Reading design: VHDL.prj
 
@@ -110,8 +110,7 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "//aristoteles/kimei/MASTER/Test2/VHDL/VHDL.vhd" in Library work.
-Entity <vhdl> compiled.
-Entity <vhdl> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity vhdl is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -134,13 +133,32 @@ Performing bidirectional port resolution...
 
 Synthesizing Unit <VHDL>.
     Related source file is "//aristoteles/kimei/MASTER/Test2/VHDL/VHDL.vhd".
+WARNING:Xst:1306 - Output <lyd> is never assigned.
+WARNING:Xst:646 - Signal <clk_1k> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 14-bit up counter for signal <clkdiv_count>.
+    Found 14-bit updown counter for signal <dim_count_sw>.
+    Found 1-bit register for signal <lys2_S>.
+    Found 14-bit comparator greater for signal <lys2_S$cmp_gt0000> created at line 64.
+    Found 1-bit register for signal <snu>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Comparator(s).
 Unit <VHDL> synthesized.
 
 
 =========================================================================
 HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# Counters                                             : 2
+ 14-bit up counter                                     : 1
+ 14-bit updown counter                                 : 1
+# Registers                                            : 2
+ 1-bit register                                        : 2
+# Comparators                                          : 1
+ 14-bit comparator greater                             : 1
+
 =========================================================================
 
 =========================================================================
@@ -152,7 +170,15 @@ Loading device for application Rf_Device from file '5vlx50t.nph' in environment 
 =========================================================================
 Advanced HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# Counters                                             : 2
+ 14-bit up counter                                     : 1
+ 14-bit updown counter                                 : 1
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+# Comparators                                          : 1
+ 14-bit comparator greater                             : 1
+
 =========================================================================
 
 =========================================================================
@@ -170,7 +196,10 @@ Final Macro Processing ...
 =========================================================================
 Final Register Report
 
-Found no macro
+Macro Statistics
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+
 =========================================================================
 
 =========================================================================
@@ -195,14 +224,30 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : NO
 
 Design Statistics
-# IOs                              : 2
+# IOs                              : 5
 
 Cell Usage :
-# BELS                             : 1
-#      INV                         : 1
-# IO Buffers                       : 2
+# BELS                             : 117
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 13
+#      LUT2                        : 16
+#      LUT4                        : 15
+#      LUT5                        : 3
+#      LUT6                        : 5
+#      MUXCY                       : 33
+#      VCC                         : 1
+#      XORCY                       : 28
+# FlipFlops/Latches                : 30
+#      FD                          : 1
+#      FDR                         : 14
+#      FDRE                        : 14
+#      FDRS                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 3
 #      IBUF                        : 1
-#      OBUF                        : 1
+#      OBUF                        : 2
 =========================================================================
 
 Device utilization summary:
@@ -212,21 +257,23 @@ Selected Device : 5vlx50tff1136-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                    1  out of  28800     0%  
-    Number used as Logic:                 1  out of  28800     0%  
+ Number of Slice Registers:              30  out of  28800     0%  
+ Number of Slice LUTs:                   54  out of  28800     0%  
+    Number used as Logic:                54  out of  28800     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      1
-   Number with an unused Flip Flop:       1  out of      1   100%  
-   Number with an unused LUT:             0  out of      1     0%  
-   Number of fully used LUT-FF pairs:     0  out of      1     0%  
-   Number of unique control sets:         0
+ Number of LUT Flip Flop pairs used:     54
+   Number with an unused Flip Flop:      24  out of     54    44%  
+   Number with an unused LUT:             0  out of     54     0%  
+   Number of fully used LUT-FF pairs:    30  out of     54    55%  
+   Number of unique control sets:         4
 
 IO Utilization: 
- Number of IOs:                           2
- Number of bonded IOBs:                   2  out of    480     0%  
+ Number of IOs:                           5
+ Number of bonded IOBs:                   4  out of    480     0%  
 
 Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
 
 ---------------------------
 Partition Resource Summary:
@@ -246,7 +293,11 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-No clock signals found in this design
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_100m                           | BUFGP                  | 30    |
+-----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -256,20 +307,81 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: No path found
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
-   Maximum combinational path delay: 3.520ns
+   Minimum period: 2.498ns (Maximum Frequency: 400.320MHz)
+   Minimum input arrival time before clock: 1.486ns
+   Maximum output required time after clock: 2.775ns
+   Maximum combinational path delay: 3.609ns
 
 Timing Detail:
 --------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
+Timing constraint: Default period analysis for Clock 'clk_100m'
+  Clock period: 2.498ns (frequency: 400.320MHz)
+  Total number of paths / destination ports: 715 / 45
+-------------------------------------------------------------------------
+Delay:               2.498ns (Levels of Logic = 2)
+  Source:            dim_count_sw_4 (FF)
+  Destination:       snu (FF)
+  Source Clock:      clk_100m rising
+  Destination Clock: clk_100m rising
+
+  Data Path: dim_count_sw_4 to snu
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             5   0.396   0.866  dim_count_sw_4 (dim_count_sw_4)
+     LUT6:I0->O            1   0.086   0.361  snu_cmp_eq000050 (snu_cmp_eq000050)
+     LUT5:I4->O            1   0.086   0.235  snu_cmp_eq000067 (snu_cmp_eq0000)
+     FDRS:S                    0.468          snu
+    ----------------------------------------
+    Total                      2.498ns (1.036ns logic, 1.462ns route)
+                                       (41.5% logic, 58.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_100m'
+  Total number of paths / destination ports: 30 / 30
+-------------------------------------------------------------------------
+Offset:              1.486ns (Levels of Logic = 1)
+  Source:            knapp (PAD)
+  Destination:       dim_count_sw_0 (FF)
+  Destination Clock: clk_100m rising
+
+  Data Path: knapp to dim_count_sw_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            31   0.694   0.324  knapp_IBUF (knapp_IBUF)
+     FDRE:R                    0.468          dim_count_sw_0
+    ----------------------------------------
+    Total                      1.486ns (1.162ns logic, 0.324ns route)
+                                       (78.2% logic, 21.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100m'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.775ns (Levels of Logic = 1)
+  Source:            lys2_S (FF)
+  Destination:       lys2 (PAD)
+  Source Clock:      clk_100m rising
+
+  Data Path: lys2_S to lys2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.396   0.235  lys2_S (lys2_S)
+     OBUF:I->O                 2.144          lys2_OBUF (lys2)
+    ----------------------------------------
+    Total                      2.775ns (2.540ns logic, 0.235ns route)
+                                       (91.5% logic, 8.5% route)
+
+=========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               3.520ns (Levels of Logic = 3)
+Delay:               3.609ns (Levels of Logic = 3)
   Source:            knapp (PAD)
   Destination:       lys (PAD)
 
@@ -277,24 +389,24 @@ Delay:               3.520ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   0.694   0.235  knapp_IBUF (knapp_IBUF)
+     IBUF:I->O            31   0.694   0.324  knapp_IBUF (knapp_IBUF)
      INV:I->O              1   0.212   0.235  lys1_INV_0 (lys_OBUF)
      OBUF:I->O                 2.144          lys_OBUF (lys)
     ----------------------------------------
-    Total                      3.520ns (3.050ns logic, 0.470ns route)
-                                       (86.6% logic, 13.4% route)
+    Total                      3.609ns (3.050ns logic, 0.559ns route)
+                                       (84.5% logic, 15.5% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.81 secs
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 16.19 secs
  
 --> 
 
-Total memory usage is 261468 kilobytes
+Total memory usage is 264540 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

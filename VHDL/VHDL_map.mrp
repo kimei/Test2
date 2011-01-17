@@ -10,24 +10,51 @@ Target Device  : xc5vlx50t
 Target Package : ff1136
 Target Speed   : -3
 Mapper Version : virtex5 -- $Revision: 1.46.12.2 $
-Mapped Date    : Fri Jan 14 13:19:12 2011
+Mapped Date    : Mon Jan 17 14:38:59 2011
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    1
 Slice Logic Utilization:
+  Number of Slice Registers:                    30 out of  28,800    1%
+    Number used as Flip Flops:                  30
+  Number of Slice LUTs:                         46 out of  28,800    1%
+    Number used as logic:                       45 out of  28,800    1%
+      Number using O6 output only:              25
+      Number using O5 output only:              12
+      Number using O5 and O6:                    8
+    Number used as exclusive route-thru:         1
+  Number of route-thrus:                        14 out of  57,600    1%
+    Number using O6 output only:                13
+    Number using O5 output only:                 1
 
 Slice Logic Distribution:
+  Number of occupied Slices:                    14 out of   7,200    1%
+  Number of LUT Flip Flop pairs used:           46
+    Number with an unused Flip Flop:            16 out of      46   34%
+    Number with an unused LUT:                   0 out of      46    0%
+    Number of fully used LUT-FF pairs:          30 out of      46   65%
+    Number of unique control sets:               4
+    Number of slice register sites lost
+      to control set restrictions:              10 out of  28,800    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                         2 out of     480    1%
+  Number of bonded IOBs:                         4 out of     480    1%
 
 Specific Feature Utilization:
+  Number of BUFG/BUFGCTRLs:                      1 out of      32    3%
+    Number used as BUFGs:                        1
 
-Peak Memory Usage:  309 MB
-Total REAL time to MAP completion:  22 secs 
-Total CPU time to MAP completion:   13 secs 
+Peak Memory Usage:  314 MB
+Total REAL time to MAP completion:  27 secs 
+Total CPU time to MAP completion:   22 secs 
 
 Table of Contents
 -----------------
@@ -68,9 +95,15 @@ INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
+   2 block(s) optimized away
 
 Section 5 - Removed Logic
 -------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.
@@ -82,8 +115,10 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Strength | Rate |              |          | Delay    |
 +-------------------------------------------------------------------------------------------------------------------------------------------------+
+| clk_100m                           | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
 | knapp                              | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
 | lys                                | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
+| lys2                               | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
 +-------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs
@@ -139,7 +174,7 @@ Section 14 - Utilization by Hierarchy
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Module             | Partition | Slices*       | Slice Reg     | LUTs          | LUTRAM        | BRAM/FIFO | DSP48E  | BUFG  | BUFIO | BUFR  | DCM   | PLL   | Full Hierarchical  |
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| VHDL/              |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0   | VHDL               |
+| VHDL/              |           | 14/14         | 30/30         | 46/46         | 0/0           | 0/0       | 0/0     | 1/1   | 0/0   | 0/0   | 0/0   | 0/0   | VHDL               |
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 * Slices can be packed with basic elements from multiple hierarchies.

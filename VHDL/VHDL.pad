@@ -1,7 +1,7 @@
 Release 10.1.03 - par K.39 (nt)
 Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
 
-Fri Jan 14 13:20:13 2011
+Mon Jan 17 14:40:05 2011
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -263,7 +263,7 @@ AG10||IOBM|IO_L19P_22|UNUSED||22||||||||||
 AG11||IOBS|IO_L19N_22|UNUSED||22||||||||||
 AG12||IOBS|IO_L2N_A22_2|UNUSED||2||||||||||
 AG13||IOBS|IO_L1N_GC_D12_4|UNUSED||4||||||||||
-AG14|||VCCO_4|||4|||||any******|||||
+AG14|||VCCO_4|||4|||||2.50|||||
 AG15||IOBS|IO_L5N_GC_4|UNUSED||4||||||||||
 AG16||IOBS|IO_L7N_GC_VRP_4|UNUSED||4||||||||||
 AG17||IOBS|IO_L9N_CC_GC_4|UNUSED||4||||||||||
@@ -272,7 +272,7 @@ AG19|||GND|||||||||||||
 AG20||IOBS|IO_L4N_GC_VREF_4|UNUSED||4||||||||||
 AG21||IOBM|IO_L4P_GC_4|UNUSED||4||||||||||
 AG22||IOBM|IO_L0P_GC_D15_4|UNUSED||4||||||||||
-AG23||IOBS|IO_L1N_CC_A24_2|UNUSED||2||||||||||
+AG23|lys2|IOB|IO_L1N_CC_A24_2|OUTPUT|LVCMOS25*|2|12|SLOW||||LOCATED||NO|NONE|
 AG24|||GND|||||||||||||
 AG25||IOBS|IO_L13N_21|UNUSED||21||||||||||
 AG26||IOBS|IO_L14N_VREF_21|UNUSED||21||||||||||
@@ -298,7 +298,7 @@ AH11|||VCCO_22|||22|||||any******|||||
 AH12||IOBM|IO_L1P_GC_D13_4|UNUSED||4||||||||||
 AH13||IOBS|IO_L3N_GC_D8_4|UNUSED||4||||||||||
 AH14||IOBM|IO_L3P_GC_D9_4|UNUSED||4||||||||||
-AH15||IOBM|IO_L5P_GC_4|UNUSED||4||||||||||
+AH15|clk_100m|IOB|IO_L5P_GC_4|INPUT|LVCMOS25*|4||||NONE||LOCATED||NO|NONE|
 AH16|||GND|||||||||||||
 AH17||IOBM|IO_L7P_GC_VRN_4|UNUSED||4||||||||||
 AH18||IOBM|IO_L9P_CC_GC_4|UNUSED||4||||||||||
@@ -395,7 +395,7 @@ AL8|||MGTAVCC_126|||||||||||||
 AL9|||GND|||||||||||||
 AL10||IOBS|IO_L8N_CC_22|UNUSED||22||||||||||
 AL11||IOBM|IO_L8P_CC_22|UNUSED||22||||||||||
-AL12|||VCCO_4|||4|||||any******|||||
+AL12|||VCCO_4|||4|||||2.50|||||
 AL13|||NC|||||||||||||
 AL14|||NC|||||||||||||
 AL15|||NC|||||||||||||

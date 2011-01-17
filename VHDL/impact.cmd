@@ -1,4 +1,5 @@
 loadCdf -file "M:/MASTER/Test2/VHDL/VHDL.ipf"
-setMode -pff
-generate
+setMode -bs
+setcable -port auto
+program -target
 exit

@@ -1,2 +1,4 @@
 NET "lys" LOC = AF13;
 NET "knapp" LOC = U8;
+NET "lys2" LOC = AG23;
+NET "clk_100m" LOC = AH15;

@@ -1,8 +1,10 @@
 //! **************************************************************************
-// Written by: Map K.39 on Fri Jan 14 13:19:32 2011
+// Written by: Map K.39 on Mon Jan 17 14:39:25 2011
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "lys2" LOCATE = SITE "AG23" LEVEL 1;
+COMP "clk_100m" LOCATE = SITE "AH15" LEVEL 1;
 COMP "lys" LOCATE = SITE "AF13" LEVEL 1;
 COMP "knapp" LOCATE = SITE "U8" LEVEL 1;
 SCHEMATIC END;

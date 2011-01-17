@@ -837,14 +837,16 @@ proc restore { { project_dir "" } } {
 
   set user_files { 
       "VHDL.ucf" 
-      "VHDL.vhd"}
+      "VHDL.vhd" 
+      "pll_all.xaw"}
 
   HandleException {
     AddUserFiles $iProjHelper $user_files
   } "A problem occured while restoring user files."
 
   set imported_files { 
-      "VHDL_guide.ncd"}
+      "VHDL_guide.ncd" 
+      "pll_all_arwz.ucf"}
 
   set origination 2
 

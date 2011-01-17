@@ -27,3 +27,107 @@ map -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w 
 par -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -w -intstyle ise -ol std -t 1 VHDL_map.ncd VHDL.ncd VHDL.pcf
 trce -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -v 3 -s 3 -xml VHDL VHDL.ncd -o VHDL.twr VHDL.pcf -ucf VHDL.ucf
 bitgen -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -f VHDL.ut VHDL.ncd
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+ngdbuild -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc5vlx50t-ff1136-3 "VHDL.ngc" VHDL.ngd
+map -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off -power off -o VHDL_map.ncd VHDL.ngd VHDL.pcf
+par -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -w -intstyle ise -ol std -t 1 VHDL_map.ncd VHDL.ncd VHDL.pcf
+trce -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -v 3 -s 3 -xml VHDL VHDL.ncd -o VHDL.twr VHDL.pcf -ucf VHDL.ucf
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+ngdbuild -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc5vlx50t-ff1136-3 "VHDL.ngc" VHDL.ngd
+map -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off -power off -o VHDL_map.ncd VHDL.ngd VHDL.pcf
+par -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -w -intstyle ise -ol std -t 1 VHDL_map.ncd VHDL.ncd VHDL.pcf
+trce -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -v 3 -s 3 -xml VHDL VHDL.ncd -o VHDL.twr VHDL.pcf -ucf VHDL.ucf
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+ngdbuild -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc5vlx50t-ff1136-3 "VHDL.ngc" VHDL.ngd
+map -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off -power off -o VHDL_map.ncd VHDL.ngd VHDL.pcf
+par -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -w -intstyle ise -ol std -t 1 VHDL_map.ncd VHDL.ncd VHDL.pcf
+trce -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -v 3 -s 3 -xml VHDL VHDL.ncd -o VHDL.twr VHDL.pcf -ucf VHDL.ucf
+ngdbuild -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc5vlx50t-ff1136-3 "VHDL.ngc" VHDL.ngd
+map -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off -power off -o VHDL_map.ncd VHDL.ngd VHDL.pcf
+par -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -w -intstyle ise -ol std -t 1 VHDL_map.ncd VHDL.ncd VHDL.pcf
+trce -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -v 3 -s 3 -xml VHDL VHDL.ncd -o VHDL.twr VHDL.pcf -ucf VHDL.ucf
+bitgen -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -f VHDL.ut VHDL.ncd
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+ngdbuild -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc5vlx50t-ff1136-3 "VHDL.ngc" VHDL.ngd
+map -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off -power off -o VHDL_map.ncd VHDL.ngd VHDL.pcf
+par -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -w -intstyle ise -ol std -t 1 VHDL_map.ncd VHDL.ncd VHDL.pcf
+trce -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -v 3 -s 3 -xml VHDL VHDL.ncd -o VHDL.twr VHDL.pcf -ucf VHDL.ucf
+bitgen -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -f VHDL.ut VHDL.ncd
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+ngdbuild -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc5vlx50t-ff1136-3 "VHDL.ngc" VHDL.ngd
+map -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off -power off -o VHDL_map.ncd VHDL.ngd VHDL.pcf
+par -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -w -intstyle ise -ol std -t 1 VHDL_map.ncd VHDL.ncd VHDL.pcf
+trce -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -v 3 -s 3 -xml VHDL VHDL.ncd -o VHDL.twr VHDL.pcf -ucf VHDL.ucf
+bitgen -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -f VHDL.ut VHDL.ncd
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+ngdbuild -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc5vlx50t-ff1136-3 "VHDL.ngc" VHDL.ngd
+map -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off -power off -o VHDL_map.ncd VHDL.ngd VHDL.pcf
+par -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -w -intstyle ise -ol std -t 1 VHDL_map.ncd VHDL.ncd VHDL.pcf
+trce -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -v 3 -s 3 -xml VHDL VHDL.ncd -o VHDL.twr VHDL.pcf -ucf VHDL.ucf
+bitgen -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -f VHDL.ut VHDL.ncd
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+ngdbuild -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc5vlx50t-ff1136-3 "VHDL.ngc" VHDL.ngd
+map -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off -power off -o VHDL_map.ncd VHDL.ngd VHDL.pcf
+par -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -w -intstyle ise -ol std -t 1 VHDL_map.ncd VHDL.ncd VHDL.pcf
+trce -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -v 3 -s 3 -xml VHDL VHDL.ncd -o VHDL.twr VHDL.pcf -ucf VHDL.ucf
+bitgen -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -f VHDL.ut VHDL.ncd
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+ngdbuild -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc5vlx50t-ff1136-3 "VHDL.ngc" VHDL.ngd
+map -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off -power off -o VHDL_map.ncd VHDL.ngd VHDL.pcf
+par -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -w -intstyle ise -ol std -t 1 VHDL_map.ncd VHDL.ncd VHDL.pcf
+trce -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -v 3 -s 3 -xml VHDL VHDL.ncd -o VHDL.twr VHDL.pcf -ucf VHDL.ucf
+bitgen -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -f VHDL.ut VHDL.ncd
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+ngdbuild -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc5vlx50t-ff1136-3 "VHDL.ngc" VHDL.ngd
+map -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off -power off -o VHDL_map.ncd VHDL.ngd VHDL.pcf
+par -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -w -intstyle ise -ol std -t 1 VHDL_map.ncd VHDL.ncd VHDL.pcf
+trce -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -v 3 -s 3 -xml VHDL VHDL.ncd -o VHDL.twr VHDL.pcf -ucf VHDL.ucf
+bitgen -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -f VHDL.ut VHDL.ncd
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+ngdbuild -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc5vlx50t-ff1136-3 "VHDL.ngc" VHDL.ngd
+map -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off -power off -o VHDL_map.ncd VHDL.ngd VHDL.pcf
+par -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -w -intstyle ise -ol std -t 1 VHDL_map.ncd VHDL.ncd VHDL.pcf
+trce -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -v 3 -s 3 -xml VHDL VHDL.ncd -o VHDL.twr VHDL.pcf -ucf VHDL.ucf
+bitgen -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -f VHDL.ut VHDL.ncd
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+ngdbuild -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc5vlx50t-ff1136-3 "VHDL.ngc" VHDL.ngd
+map -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off -power off -o VHDL_map.ncd VHDL.ngd VHDL.pcf
+par -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -w -intstyle ise -ol std -t 1 VHDL_map.ncd VHDL.ncd VHDL.pcf
+trce -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -v 3 -s 3 -xml VHDL VHDL.ncd -o VHDL.twr VHDL.pcf -ucf VHDL.ucf
+bitgen -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -f VHDL.ut VHDL.ncd
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+ngdbuild -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc5vlx50t-ff1136-3 "VHDL.ngc" VHDL.ngd
+map -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off -power off -o VHDL_map.ncd VHDL.ngd VHDL.pcf
+par -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -w -intstyle ise -ol std -t 1 VHDL_map.ncd VHDL.ncd VHDL.pcf
+trce -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -v 3 -s 3 -xml VHDL VHDL.ncd -o VHDL.twr VHDL.pcf -ucf VHDL.ucf
+bitgen -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -f VHDL.ut VHDL.ncd
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+ngdbuild -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc5vlx50t-ff1136-3 "VHDL.ngc" VHDL.ngd
+map -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off -power off -o VHDL_map.ncd VHDL.ngd VHDL.pcf
+par -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -w -intstyle ise -ol std -t 1 VHDL_map.ncd VHDL.ncd VHDL.pcf
+trce -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -v 3 -s 3 -xml VHDL VHDL.ncd -o VHDL.twr VHDL.pcf -ucf VHDL.ucf
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+ngdbuild -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc5vlx50t-ff1136-3 "VHDL.ngc" VHDL.ngd
+map -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off -power off -o VHDL_map.ncd VHDL.ngd VHDL.pcf
+par -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -w -intstyle ise -ol std -t 1 VHDL_map.ncd VHDL.ncd VHDL.pcf
+trce -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -v 3 -s 3 -xml VHDL VHDL.ncd -o VHDL.twr VHDL.pcf -ucf VHDL.ucf
+bitgen -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -f VHDL.ut VHDL.ncd
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+ngdbuild -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc5vlx50t-ff1136-3 "VHDL.ngc" VHDL.ngd
+xst -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -ifn "M:/MASTER/Test2/VHDL/VHDL.xst" -ofn "M:/MASTER/Test2/VHDL/VHDL.syr"
+ngdbuild -ise "M:/MASTER/Test2/VHDL/VHDL.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc5vlx50t-ff1136-3 "VHDL.ngc" VHDL.ngd

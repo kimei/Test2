@@ -30,22 +30,46 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Setup/Hold to clock clk_100m
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+knapp       |    0.866(R)|    1.057(R)|clk_100m_BUFGP    |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk_100m to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+lys2        |    7.277(R)|clk_100m_BUFGP    |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk_100m
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100m       |    2.284|         |         |         |
+---------------+---------+---------+---------+---------+
+
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-knapp          |lys            |    5.630|
+knapp          |lys            |    5.729|
 ---------------+---------------+---------+
 
 
-Analysis completed Fri Jan 14 13:20:39 2011 
+Analysis completed Mon Jan 17 14:40:30 2011 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 225 MB
+Peak Memory Usage: 226 MB
 
 
 

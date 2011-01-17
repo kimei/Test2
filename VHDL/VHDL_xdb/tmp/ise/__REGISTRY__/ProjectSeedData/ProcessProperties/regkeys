@@ -62,7 +62,7 @@ prop_109_val
 "ISE Text Editor"
 s
 prop_10_name
-PROP_PostXlateSimTop
+PROP_BehavioralSimTop
 s
 prop_10_val
 "Architecture|VHDL|Behavioral"
@@ -128,7 +128,7 @@ prop_119_val
 "true"
 s
 prop_11_name
-PROP_PostMapSimTop
+PROP_PostXlateSimTop
 s
 prop_11_val
 "Architecture|VHDL|Behavioral"
@@ -194,7 +194,7 @@ prop_129_val
 "false"
 s
 prop_12_name
-PROP_PostParSimTop
+PROP_PostMapSimTop
 s
 prop_12_val
 "Architecture|VHDL|Behavioral"
@@ -260,10 +260,10 @@ prop_139_val
 "true"
 s
 prop_13_name
-PROP_PostFitSimTop
+PROP_PostParSimTop
 s
 prop_13_val
-""
+"Architecture|VHDL|Behavioral"
 s
 prop_140_name
 PROP_PrecShowClockDomainCrossing
@@ -326,10 +326,10 @@ prop_149_val
 "false"
 s
 prop_14_name
-PROP_PostSynthSimTop
+PROP_PostFitSimTop
 s
 prop_14_val
-"Architecture|VHDL|Behavioral"
+""
 s
 prop_150_name
 PROP_SynthSymbolicFsm
@@ -392,10 +392,10 @@ prop_159_val
 ""
 s
 prop_15_name
-PROP_UseSmartGuide
+PROP_PostSynthSimTop
 s
 prop_15_val
-"false"
+"Architecture|VHDL|Behavioral"
 s
 prop_160_name
 PROP_ConstFileAddOption
@@ -458,10 +458,10 @@ prop_169_val
 "Low"
 s
 prop_16_name
-PROP_PartitionCreateDelete
+PROP_UseSmartGuide
 s
 prop_16_val
-""
+"false"
 s
 prop_170_name
 PROP_xcpldFitDesTimingCst
@@ -524,7 +524,7 @@ prop_179_val
 "true"
 s
 prop_17_name
-PROP_PartitionForceSynth
+PROP_PartitionCreateDelete
 s
 prop_17_val
 ""
@@ -590,7 +590,7 @@ prop_189_val
 "true"
 s
 prop_18_name
-PROP_PartitionForceTranslate
+PROP_PartitionForceSynth
 s
 prop_18_val
 ""
@@ -656,7 +656,7 @@ prop_199_val
 "false"
 s
 prop_19_name
-PROP_PartitionForcePlacement
+PROP_PartitionForceTranslate
 s
 prop_19_val
 ""
@@ -728,10 +728,10 @@ prop_209_val
 "false"
 s
 prop_20_name
-PROP_DesignName
+PROP_PartitionForcePlacement
 s
 prop_20_val
-"VHDL"
+""
 s
 prop_210_name
 PROP_xilxMapCoverMode
@@ -794,10 +794,10 @@ prop_219_val
 "None"
 s
 prop_21_name
-PROP_Dummy
+PROP_DesignName
 s
 prop_21_val
-"dum1"
+"VHDL"
 s
 prop_220_name
 PROP_xilxPARplacerCostTable
@@ -860,10 +860,10 @@ prop_229_val
 "true"
 s
 prop_22_name
-PROP_LastAppliedGoal
+PROP_Dummy
 s
 prop_22_val
-"Balanced"
+"dum1"
 s
 prop_230_name
 PROP_xilxBitgCfg_GenOpt_BinaryFile
@@ -926,10 +926,10 @@ prop_239_val
 "Pull Up"
 s
 prop_23_name
-PROP_LastAppliedStrategy
+PROP_LastAppliedGoal
 s
 prop_23_val
-"Xilinx Default (unlocked)"
+"Balanced"
 s
 prop_240_name
 PROP_xilxBitgCfg_M0
@@ -992,10 +992,10 @@ prop_249_val
 "Pull Down"
 s
 prop_24_name
-PROP_LastUnlockStatus
+PROP_LastAppliedStrategy
 s
 prop_24_val
-"false"
+"Xilinx Default (unlocked)"
 s
 prop_250_name
 PROP_xilxBitgCfg_Code
@@ -1058,10 +1058,10 @@ prop_259_val
 "Enable Readback and Reconfiguration"
 s
 prop_25_name
-PROP_UserBrowsedStrategyFiles
+PROP_LastUnlockStatus
 s
 prop_25_val
-""
+"false"
 s
 prop_260_name
 PROP_xilxBitgCfg_GenOpt_ReadBack
@@ -1124,10 +1124,10 @@ prop_269_val
 "3"
 s
 prop_26_name
-PROP_SimUseCustom_postXlate
+PROP_UserBrowsedStrategyFiles
 s
 prop_26_val
-"false"
+""
 s
 prop_270_name
 PROP_xilxPostTrceAdvAna
@@ -1328,10 +1328,10 @@ prop_29_val
 "false"
 s
 prop_2_name
-PROP_StartImpView
+PROP_SimUseCustom_postXlate
 s
 prop_2_val
-""
+"false"
 s
 prop_300_name
 PROP_SynthDecoderExtract
@@ -1994,10 +1994,10 @@ prop_39_val
 "true"
 s
 prop_3_name
-PROP_StopImpView
+PROP_StartImpView
 s
 prop_3_val
-"AbstractSynthesis"
+""
 s
 prop_400_name
 PROP_ISimIncreCompilation
@@ -2660,10 +2660,10 @@ prop_49_val
 "Speed"
 s
 prop_4_name
-PROP_HierarchicalProjectType
+PROP_StopImpView
 s
 prop_4_val
-"N/A"
+"AbstractSynthesis"
 s
 prop_500_name
 PROP_ISimGenVCDFile_par_tb
@@ -3326,10 +3326,10 @@ prop_59_val
 ""
 s
 prop_5_name
-PROP_ProjectGeneratorType
+PROP_HierarchicalProjectType
 s
 prop_5_val
-"ProjNav"
+"N/A"
 s
 prop_600_name
 PROP_SimModelGenArchOnly
@@ -3590,10 +3590,10 @@ prop_69_val
 "true"
 s
 prop_6_name
-PROP_Parse_Target
+PROP_ProjectGeneratorType
 s
 prop_6_val
-"synthesis"
+"ProjNav"
 s
 prop_70_name
 PROP_xstEquivRegRemoval
@@ -3656,10 +3656,10 @@ prop_79_val
 "true"
 s
 prop_7_name
-PROP_Top_Level_Module_Type
+PROP_Parse_Target
 s
 prop_7_val
-"HDL"
+"synthesis"
 s
 prop_80_name
 PROP_isimCompileForHdlDebug
@@ -3722,10 +3722,10 @@ prop_89_val
 ""
 s
 prop_8_name
-PROP_SynthTop
+PROP_Top_Level_Module_Type
 s
 prop_8_val
-"Architecture|VHDL|Behavioral"
+"HDL"
 s
 prop_90_name
 PROP_ISimOtherCompilerOptions_par
@@ -3788,7 +3788,7 @@ prop_99_val
 "No"
 s
 prop_9_name
-PROP_BehavioralSimTop
+PROP_SynthTop
 s
 prop_9_val
 "Architecture|VHDL|Behavioral"
